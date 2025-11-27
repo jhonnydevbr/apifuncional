@@ -40,9 +40,10 @@ API-Funcional/
 	•	Preparado para deploy seguro em ambientes cloud
 	•	Uso de .gitignore para não expor credenciais sensíveis
 
-📌 Objetivo
+# Objetivo
 
 Esta API foi criada para:
+
 	•	Documentar aprendizado em .NET e Entity Framework
 	•	Servir de base/template para futuras APIs
 	•	Demonstrar boas práticas de organização de projeto e versionamento de banco.
