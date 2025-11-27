@@ -4,7 +4,7 @@
 API Funcional é uma API em .NET completa, construída como projeto de aprendizado e também para servir como template reutilizável em futuros projetos. 
 Ela implementa uma arquitetura típica de APIs modernas, incluindo Controllers, Models, Data, Migrations e integração com SQL Server.
 
-> 🛠️ [!Tecnologias]
+> [!Tecnologias]
 >
 > - .NET 9
 > - Entity Framework Core (SQL Server)
