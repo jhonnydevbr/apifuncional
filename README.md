@@ -13,7 +13,7 @@ Ela implementa uma arquitetura típica de APIs modernas, incluindo Controllers, 
 > - SQL Server (remoto em uma VPS com Docker)
 
 # Estrutura do Projeto
-
+```bash
 API-Funcional/
 ├─ Controllers/       # Onde ficam os endpoints da API
 ├─ Data/              # Contexto do banco e configuração do EF Core
@@ -21,15 +21,16 @@ API-Funcional/
 ├─ Models/            # Classes de domínio e DTOs
 ├─ appsettings.json   # Configurações da aplicação (não subir senhas)
 ├─ Program.cs         # Configuração e inicialização da API
+```
 
-# Estrutura do Projeto
+# Destaques do Projeto
 
-Arquitetura modular: Controllers, Models, Data e Migrations.
-Conexão com SQL Server utilizando Entity Framework Core.
-CRUD completo com validações e estrutura clara.
-Documentação automática via Swagger/OpenAPI.
-Projeto pensado como template reutilizável para futuras APIs.
-Configuração pronta para boas práticas de segurança, sem expor credenciais.
+• Arquitetura modular: Controllers, Models, Data e Migrations.
+• Conexão com SQL Server utilizando Entity Framework Core.
+• CRUD completo com validações e estrutura clara.
+• Documentação automática via Swagger/OpenAPI.
+• Projeto pensado como template reutilizável para futuras APIs.
+• Configuração pronta para boas práticas de segurança, sem expor credenciais.
 
 # Boas Práticas
 
@@ -45,8 +46,6 @@ Esta API foi criada para:
 	•	Documentar aprendizado em .NET e Entity Framework
 	•	Servir de base/template para futuras APIs
 	•	Demonstrar boas práticas de organização de projeto e versionamento de banco.
-
----
 
 ---
 
