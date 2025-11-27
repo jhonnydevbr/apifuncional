@@ -25,12 +25,12 @@ API-Funcional/
 
 # Destaques do Projeto
 
-• Arquitetura modular: Controllers, Models, Data e Migrations.
-• Conexão com SQL Server utilizando Entity Framework Core.
-• CRUD completo com validações e estrutura clara.
-• Documentação automática via Swagger/OpenAPI.
-• Projeto pensado como template reutilizável para futuras APIs.
-• Configuração pronta para boas práticas de segurança, sem expor credenciais.
+	•	Arquitetura modular: Controllers, Models, Data e Migrations.
+	•	Conexão com SQL Server utilizando Entity Framework Core.
+	•	CRUD completo com validações e estrutura clara.
+	•	Documentação automática via Swagger/OpenAPI.
+	•	Projeto pensado como template reutilizável para futuras APIs.
+	•	Configuração pronta para boas práticas de segurança, sem expor credenciais.
 
 # Boas Práticas
 
