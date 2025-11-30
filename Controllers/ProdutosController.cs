@@ -144,9 +144,9 @@ public class ProdutosController : ControllerBase
         return NoContent();
     }
 
-    public bool ProdutoExists(int id)
+    private bool ProdutoExists(int id)
     {
-        return (_context.Produtos?.Any(e => e.Id == id)).GetValueOrDefault();
+        return _context.Produtos.Any(e => e.Id == id);
     }
 
 
