@@ -1,16 +1,20 @@
 # API FUNCIONAL .NET
 
 
-API Funcional é uma API em .NET completa, construída como projeto de aprendizado e também para servir como template reutilizável em futuros projetos. 
+API Funcional é uma API em .NET completa, construída como projeto de consolidação de conceitos e também para servir como template reutilizável em futuros projetos.
 Ela implementa uma arquitetura típica de APIs modernas, incluindo Controllers, Models, Data, Migrations e integração com SQL Server.
+Além disso, inclui recursos de segurança profissional utilizando Identity, JWT, autenticação e autorização por roles.
 
 # Tecnologias
 >
 > - .NET 9
 > - Entity Framework Core (SQL Server)
-> - Swagger/OpenAPI para documentação interativa
+> - Swagger para documentação interativa
 > - C# com arquitetura limpa
 > - SQL Server (remoto em uma VPS com Docker)
+> - ASP.NET Identity para gerenciamento de usuários
+> - JWT (JSON Web Token) para autenticação segura
+> - Autorização baseada em roles e policies
 
 # Estrutura do Projeto
 ```bash
@@ -28,9 +32,11 @@ API-Funcional/
 	•	Arquitetura modular: Controllers, Models, Data e Migrations.
 	•	Conexão com SQL Server utilizando Entity Framework Core.
 	•	CRUD completo com validações e estrutura clara.
-	•	Documentação automática via Swagger/OpenAPI.
+	•	Documentação automática via Swagger.
 	•	Projeto pensado como template reutilizável para futuras APIs.
 	•	Configuração pronta para boas práticas de segurança, sem expor credenciais.
+	•	Sistema completo de autenticação com Identity + JWT.
+	•	Controle de acesso via autorização (roles, policies e [Authorize]).
 
 # Boas Práticas
 
@@ -39,6 +45,7 @@ API-Funcional/
 	•	Endpoints documentados e testáveis via Swagger
 	•	Preparado para deploy seguro em ambientes cloud
 	•	Uso de .gitignore para não expor credenciais sensíveis
+	•	Implementar segurança moderna com Identity + JWT
 
 # Objetivo
 
