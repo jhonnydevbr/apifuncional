@@ -19,12 +19,18 @@ Além disso, inclui recursos de segurança profissional utilizando Identity, JWT
 # Estrutura do Projeto
 ```bash
 API-Funcional/
-├─ Controllers/       # Onde ficam os endpoints da API
-├─ Data/              # Contexto do banco e configuração do EF Core
-├─ Migrations/        # Scripts de criação e alterações do banco
-├─ Models/            # Classes de domínio e DTOs
-├─ appsettings.json   # Configurações da aplicação (não subir senhas)
-├─ Program.cs         # Configuração e inicialização da API
+├─ Configuration/
+	ApiConfig.cs       # Configurações de controllers, behaviors, formatação e filtros globais.
+	CorsConfig.cs      # Definição das políticas de CORS, origens permitidas e métodos autorizados.
+	DbContextConfig.cs # Configuração do Entity Framework, connection string, migrations e tracking.
+	IdentityConfig.cs  # Configuração do JWT, autenticação, autorização e políticas de acesso.
+	SwaggerConfig.cs   # Documentação da API, versionamento e segurança.
+├─ Controllers/        # Onde ficam os endpoints da API
+├─ Data/               # Contexto do banco e configuração do EF Core
+├─ Migrations/         # Scripts de criação e alterações do banco
+├─ Models/             # Classes de domínio e DTOs
+├─ appsettings.json    # Configurações da aplicação (não subir senhas)
+├─ Program.cs          # Configuração e inicialização da API
 ```
 
 # Destaques do Projeto
@@ -40,20 +46,22 @@ API-Funcional/
 
 # Boas Práticas
 
-	•	Separação clara de responsabilidades (Controller, Service, Data)
+	•	Separação clara de responsabilidades (Configuration, Controller, Data, Identity)
 	•	Versionamento de banco com Entity Framework Migrations
 	•	Endpoints documentados e testáveis via Swagger
 	•	Preparado para deploy seguro em ambientes cloud
 	•	Uso de .gitignore para não expor credenciais sensíveis
 	•	Implementar segurança moderna com Identity + JWT
+	•	Program.cs limpo, com inicialização mínima e modular
 
 # Objetivo
 
 Esta API foi criada para:
 
-	•	Documentar aprendizado em .NET e Entity Framework
-	•	Servir de base/template para futuras APIs
-	•	Demonstrar boas práticas de organização de projeto e versionamento de banco.
+	•	Consolidar conhecimentos em .NET, EF Core e arquitetura de APIs
+	•	Servir como base/template reutilizável
+	•	Padronizar boas práticas de organização, segurança e versionamento
+	•	Criar uma fundação robusta para futuros projetos, inclusive SaaS
 
 ---
 
@@ -91,7 +99,7 @@ dotnet run
 Acesse a documentação dos endpoints em:
 
 ```bash
-https://localhost:5001/swagger
+https://localhost:7200/swagger/index.html
 ```
 
 ---
