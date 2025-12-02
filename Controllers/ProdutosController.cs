@@ -5,9 +5,11 @@ using apifuncional.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 namespace apifuncional.Controllers;
 
+[Authorize]
 [ApiController]
 // Resource
 [Route("api/produtos")]
