@@ -1,13 +1,3 @@
-using System;
-using System.Text;
-using apifuncional.Data;
-using apifuncional.Models;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
-
 namespace apifuncional.Configuration;
 
 public static class ApiConfig
